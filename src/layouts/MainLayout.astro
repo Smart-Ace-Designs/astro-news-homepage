@@ -1,6 +1,7 @@
 ---
 import "@/styles/global.css";
 import { ClientRouter } from "astro:transitions";
+import { Font } from "astro:assets";
 
 import AppNavbar from "@/components/AppNavbar.astro";
 
@@ -18,10 +19,11 @@ const { title = "Astro", description = "An Astro website." } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
+    <Font cssVariable="--font-inter" preload />
     <title>{title}</title>
     <ClientRouter />
   </head>
-  <body class="font-inter text-theme-very-dark-blue bg-theme-off-white text-base">
+  <body class="bg-theme-off-white font-inter text-base text-theme-very-dark-blue">
     <AppNavbar />
     <main>
       <slot />

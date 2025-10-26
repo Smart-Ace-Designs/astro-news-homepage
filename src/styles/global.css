@@ -1,18 +1,6 @@
 @import "tailwindcss";
 
-@layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
-  }
-}
-
 @theme {
-  --font-inter: "Inter", sans-serif;
-
   --color-theme-soft-orange: hsl(35, 77%, 62%);
   --color-theme-soft-red: hsl(5, 85%, 63%);
   --color-theme-off-white: hsl(36, 100%, 99%);
@@ -20,14 +8,8 @@
   --color-theme-dark-grayish-blue: hsl(236, 13%, 42%);
   --color-theme-very-dark-blue: hsl(240, 100%, 5%);
 
+  --font-inter: "Inter", sans-serif;
+
   --text-base: 0.9375rem;
   --text-base--line-height: calc(1.25 / 0.9375);
-}
-
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400 700 800;
-  src: url("/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
-  font-display: swap;
 }
