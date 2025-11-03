@@ -5,14 +5,14 @@ import { getCollection } from "astro:content";
 const asideArticles = await getCollection("asideArticles");
 ---
 
-<aside class="bg-theme-very-dark-blue text-theme-off-white px-6 pt-6" aria-label="Related content">
-  <p class="text-theme-soft-orange text-3xl font-bold xl:text-[2.5rem]">New</p>
+<aside class="bg-theme-very-dark-blue px-6 pt-6 text-theme-off-white" aria-label="Related content">
+  <p class="text-3xl font-bold text-theme-soft-orange xl:text-[2.5rem]">New</p>
   {
     asideArticles.map((article, index) => (
       <AppAsideArticle
         title={article.data.title}
         link={article.data.link}
-        class={index !== asideArticles.length - 1 ? "border-theme-dark-grayish-blue border-b" : ""}
+        class={index !== asideArticles.length - 1 ? "border-b border-theme-dark-grayish-blue" : ""}
       >
         {article.data.text}
       </AppAsideArticle>
