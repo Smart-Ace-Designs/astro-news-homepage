@@ -15,7 +15,7 @@ export default defineConfig({
         provider: fontProviders.google(),
         name: "Inter",
         cssVariable: "--font-inter",
-        weights: ["400", "600", "700", "800"],
+        weights: [400, 600, 700, 800],
         styles: ["normal"],
         subsets: ["latin"],
       },
