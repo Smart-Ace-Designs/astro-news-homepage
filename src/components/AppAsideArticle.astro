@@ -10,7 +10,7 @@ const { title, link, class: className } = Astro.props;
 
 <article class:list={[className]} class="flex flex-col gap-3 py-6">
   <a
-    href={link}
+    href={`${import.meta.env.BASE_URL}${link}`}
     class="text-[1.25rem] font-bold text-theme-off-white transition-colors delay-100 hover:text-theme-soft-orange"
   >
     <h2>{title}</h2>
