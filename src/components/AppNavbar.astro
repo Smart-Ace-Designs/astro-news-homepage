@@ -1,7 +1,7 @@
 <header
   class="mx-auto my-7 flex max-w-277.5 items-center justify-between px-4 lg:mt-22 lg:mb-14 xl:px-0"
 >
-  <a href="/">
+  <a href={import.meta.env.BASE_URL}>
     <img src="logo.svg" alt="Logo" aria-label="Navigate to home page" class="w-12 lg:w-16" />
   </a>
   <nav class="hidden sm:block">
@@ -43,19 +43,19 @@
     <nav class="mt-28">
       <ul class="flex flex-col gap-5">
         <li class="text-lg font-semibold transition-colors delay-100 hover:text-theme-soft-red">
-          <a href="/">Home</a>
+          <a href={import.meta.env.BASE_URL}>Home</a>
         </li>
         <li class="text-lg font-semibold transition-colors delay-100 hover:text-theme-soft-red">
-          <a href="/">New</a>
+          <a href={import.meta.env.BASE_URL}>New</a>
         </li>
         <li class="text-lg font-semibold transition-colors delay-100 hover:text-theme-soft-red">
-          <a href="/">Popular</a>
+          <a href={import.meta.env.BASE_URL}>Popular</a>
         </li>
         <li class="text-lg font-semibold transition-colors delay-100 hover:text-theme-soft-red">
-          <a href="/">Trending</a>
+          <a href={import.meta.env.BASE_URL}>Trending</a>
         </li>
         <li class="text-lg font-semibold transition-colors delay-100 hover:text-theme-soft-red">
-          <a href="/">Categories</a>
+          <a href={import.meta.env.BASE_URL}>Categories</a>
         </li>
       </ul>
     </nav>
